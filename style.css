@@ -8,16 +8,22 @@
   padding: 0;
 }
 
+body::-webkit-scrollbar {
+  width: 0px;
+  /* ширина scrollbar */
+}
+
 body {
   box-sizing: border-box;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 body .wrapper {
   box-sizing: border-box;
   padding-top: 25px;
-  width: 1200px;
-  margin: 0 auto;
+  width: 100%;
 }
 body .wrapper header {
   height: 109px;
@@ -468,7 +474,7 @@ body .wrapper main .block3 > .cardsbox > div {
   border-radius: 8px;
   position: relative;
 }
-@media (min-width: 400px) {
+@media (min-width: 600px) {
   body .wrapper main .block3 > .cardsbox > div:nth-child(5n) {
     margin-right: 0;
   }
@@ -1263,17 +1269,17 @@ body .wrapper footer .boxcontent .bottom .right .rbox:nth-child(2) .securitibox 
   width: 100%;
   height: 100%;
 }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   body .wrapper {
-    width: 375px;
+    overflow: hidden;
     padding: 0;
   }
   body .wrapper header {
-    margin: 0;
     padding: 0;
     width: 375px;
     height: 80px;
     margin-bottom: 24px;
+    margin: 0 auto;
     position: relative;
   }
   body .wrapper header .user-data {
@@ -1920,9 +1926,4 @@ body .wrapper footer .boxcontent .bottom .right .rbox:nth-child(2) .securitibox 
     overflow: hidden;
     flex-direction: row;
   }
-}
-
-html,
-body {
-  width: 100%;
 }
