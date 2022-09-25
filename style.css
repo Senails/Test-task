@@ -597,7 +597,6 @@ body .wrapper main .block3 > a {
 }
 body .wrapper main .block3 > a:hover {
   color: #000;
-  background: #ffea00;
 }
 body .wrapper main .block3 > a span.spanmob {
   display: none;
