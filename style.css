@@ -1927,3 +1927,31 @@ body .wrapper footer .boxcontent .bottom .right .rbox:nth-child(2) .securitibox 
     flex-direction: row;
   }
 }
+
+.aboutme {
+  position: fixed;
+  top: 30vh;
+  right: 1vh;
+  width: 5vh;
+  height: 17vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.aboutme a {
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.aboutme a:nth-child(1) {
+  background-image: url("./assets/figma.png");
+}
+.aboutme a:nth-child(2) {
+  background-image: url("./assets/git.png");
+}
+.aboutme a:nth-child(3) {
+  background-image: url("./assets/sen.png");
+}

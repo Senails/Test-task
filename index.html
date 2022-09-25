@@ -8,11 +8,10 @@
     <script>
         let meta = document.querySelector('#meta');
         let weight = window.innerWidth;
-        if (weight <= 600) {
-            meta.setAttribute("content", "width=375")
-        }
         if (weight < 1200 && weight > 600) {
             meta.setAttribute("content", "width=1200")
+        } else {
+            meta.setAttribute("content", "width=375")
         }
     </script>
     <link rel="stylesheet" href="style.css">
@@ -501,6 +500,11 @@
         </footer>
     </div>
 
+    <div class="aboutme">
+        <a href="https://www.figma.com/file/EU7Y5m7mtZToCkvuMrViuk/FIgma-to-HTML---SW"></a>
+        <a href="https://github.com/Senails/Test-task"></a>
+        <a href="https://senails.github.io/Senails/"></a>
+    </div>
 </body>
 
 </html>
